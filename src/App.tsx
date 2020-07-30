@@ -1,14 +1,9 @@
 import React from 'react';
-import logo from './logo.svg';
-import Greetings from './Greetings';
-import ReducerSample from './ReducerSample';
+
+import TodoApp from './containers/TodoApp';
 
 const App: React.FC = () => {
-	const onSubmit = (form: { name: string; description: string }) => {
-		console.log(form);
-	};
-
-	return <ReducerSample />;
+	return <TodoApp />;
 };
 
 export default App;
